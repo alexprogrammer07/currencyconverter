@@ -27,7 +27,7 @@ try:
     elif choice == 's' or choice == 'symbol':
         code1 = input("Enter the Currency code of which you want symbol:\n").upper()
 
-        print(code.get_symbol(code1)) # Printing the converted amount
+        print(code.get_symbol(code1)) # Printing the symbol of currency
 
     elif choice == 'n' or choice == 'name':
         code1 = input("Enter the Currency code of which you want name:\n").upper()
