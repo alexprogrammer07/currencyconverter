@@ -3,6 +3,7 @@ from forex_python.converter import CurrencyRates, CurrencyCodes
 c = CurrencyRates()  # Defining a class object to store currency rates
 code = CurrencyCodes()  # Creating a class object to store name and symbol of currency
 
+"Try except block to handle exceptions"
 try:
     choice = input("Enter 'r' for checking the rate\n"
                    "Enter 'c' for converting currency\n"
@@ -36,4 +37,4 @@ try:
         print("Please enter a valid choice !! :)")  # Printing message for invalid choice
 
 except Exception as e:
-    print(e)
+    print(e)  # Printing the exception (if any)
