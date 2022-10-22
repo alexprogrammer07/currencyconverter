@@ -1,4 +1,4 @@
-from forex_python.converter import CurrencyRates, CurrencyCodes
+from forex_python.converter import CurrencyRates, CurrencyCodes     #importing the required modules
 
 c = CurrencyRates()  # Defining a class object to store currency rates
 code = CurrencyCodes()  # Creating a class object to store name and symbol of currency
@@ -24,7 +24,7 @@ try:
 
         print(c.convert('USD', 'INR', amount))  # Printing the converted amount
 
-    elif choice == 's' or choice == 'symbol':
+    elif choice == 's' or choice == 'symbol':       #comparing the symbols
         code1 = input("Enter the Currency code of which you want symbol:\n").upper()
 
         print(code.get_symbol(code1)) # Printing the symbol of currency
